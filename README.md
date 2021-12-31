@@ -4,12 +4,12 @@ Docker imageを使って、簡単に、SSLに対応したOpenLDAP Serverを立�
 
 ## Usage
 
-###起動
+起動
 ```bash
 # docker-compose up -d
 ```
 
-###サーチ
+サーチ
 ```bash
 $ ldapsearch -x -H ldap://localhost -b dc=example,dc=com -D "cn=admin,dc=example,dc=com" -w password
 ```
@@ -30,7 +30,7 @@ TLS_REQCERT	try
 TLS_REQCERT	demand
 `
 
-###停止
+停止
 ```bash
 # docker-compose down -v
 ```
