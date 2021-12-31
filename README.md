@@ -11,10 +11,10 @@ Docker imageを使って、簡単に、SSLに対応したOpenLDAP Serverを立�
 
 ###サーチ
 ```bash
-# ldapsearch -x -H ldap://localhost -b dc=example,dc=com -D "cn=admin,dc=example,dc=com" -w password
+$ ldapsearch -x -H ldap://localhost -b dc=example,dc=com -D "cn=admin,dc=example,dc=com" -w password
 ```
 ```bash
-# ldapsearch -x -H ldaps://localhost -b dc=example,dc=com -D "cn=admin,dc=example,dc=com" -w password
+$ ldapsearch -x -H ldaps://localhost -b dc=example,dc=com -D "cn=admin,dc=example,dc=com" -w password
 ```
 
 サーバ側の証明書が自己証明書の場合
